@@ -69,7 +69,7 @@ function pongstart() {
         ctx.font = "20px Arial";
         ctx.fillText("Left: " + scoreLeft, 10, 30);
         ctx.fillText("Right: " + scoreRight, canvas.width - 90, 30);
-        ctx.fillText("Graj strzałkami góra, dół i w, s",x, 30)
+        ctx.fillText("Play with up, down arrows and w, s ",x, 30)
 
         // Ruch piłki
         ball.x += ball.dx;

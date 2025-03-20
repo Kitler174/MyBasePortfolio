@@ -88,7 +88,7 @@ function startsnake() {
         ctx.font = "20px Arial";
         ctx.fillText("Score: " + score, 10, 20);
         ctx.fillText("High Score: " + highsnake, 10, 40);
-        ctx.fillText("Graj przy użyciu strzałek!",10,60)
+        ctx.fillText("Play with arrows!",10,60)
     }
 
     function collision(head, array) {
