@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/games.css">
+</head>
+<body>
+    <header id="centering">
+        <h1 class="jiggle">Hi! My name is Mateusz!</h1>
+        <p id="text">I LOVE YAAAAAAAAAAAAK</p>
+        <p><img style="width: 10rem; height: 10rem;" id="YAAK-entrance" src="images/YAAK.png"><img src="images/wall.png" id="wall" style="width: 10rem; height: 10rem;"></p>
+    </header>
+    
+    <div class="container">
+        
+        <section id="about">
+            <h2>My advantages:</h2>
+            <p>The <b>Barbarian King</b> always comes first.</p>
+            <p>My favorite pet is <b>YAAAK</b>, though unfortunately, I haven’t unlocked it yet.</p>
+            <p>I am not a reckless rusher. I develop my village strategically.</p>
+            <p>I am active every day.</p>
+            <p>I regularly support my clan by donating troops.</p>
+            <p>I have no patience for <b>Archer Queen</b> simps.</p>
+        </section>
+        
+        
+        <section id="projects">
+            <h2>My base</h2>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
+                <button type="button" onclick="suw(1,'projekt','projectsai',this)" style="margin-right: 10px;">show previous</button>
+                <p id="in_0" style="margin-right: 10px;"></p>
+                <button type="button" onclick="suw(2, 'projekt','projectsai',this)">show next</button>
+            </div>
+            <div id="wyrownywacz">
+                <div id="projectsai">
+                    <div class="additionals_" id="projekt1">
+                    <div class="project">
+                        <h3>My base</h3>
+                        <p><img src="images/mybase.png">
+                        </p>
+                    </div>
+                    </div>
+                    <div class="additionals_inact" id="projekt2">
+                        <div class="project">
+                            <h3>My progress</h3>
+                            <p><img src="images/myprogress.png">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="additionals_inact" id="projekt3">
+                        <div class="project">
+                            <h3>My skins</h3>
+                            <p><img src="images/myskins.png"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Tag:</h2>
+            <p>#G9JY8JPV9</p>
+
+        </section>
+    </div>
+
+    <section id="games">
+        <h2>You want to relax?</h2>
+        <h3>Play some minigames :)</h3>
+        <div>
+            <button id="snakestart" type="button" onclick="startsnake()">Play snake</button>
+            <button id="stopSnakeButton">Stop snake</button>
+        </div>
+        <div>
+            <button id="pongstart" type="button" onclick="pongstart()">Play pong</button>
+            <button id="stopPongButton">Stop pong</button>
+        </div>
+        <canvas width="600" height="600" id="gameCanvas">
+        </canvas>
+    </section>
+    <div id="games-replacement">
+        <p>O nie! Normalnie w tej sekcji mógłbyś grać w minigry lecz masz zbyt mały ekran :(</p><br>
+        <p>Spróbuj zagrać na urządzeniu z większym ekranem i klawiaturą ;)</p>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/pong.js"></script>
+
+</body>
+</html>
