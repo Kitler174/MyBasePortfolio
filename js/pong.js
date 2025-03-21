@@ -1,6 +1,11 @@
+const canvas = document.getElementById("gameCanvas");
+canvas.width = 600; // Zwiększona szerokość planszy
+canvas.height = 600; // Zwiększona wysokość planszy
+const ctx = canvas.getContext("2d");
+const gameSection = document.getElementById("games"); 
 ctx.fillStyle = "white";
 ctx.font = "20px Arial";
-const textWidth = ctx.measureText("Graj strzałkami góra, dół i w, s").width;
+const textWidth = ctx.measureText("Play with arrows and ws").width;
 const x = (canvas.width - textWidth) / 2;
 function pongstart() {
     document.body.style.overflow = "none";
@@ -67,9 +72,7 @@ function pongstart() {
         // Rysowanie wyniku
         ctx.fillStyle = "white";
         ctx.font = "20px Arial";
-        ctx.fillText("Left: " + scoreLeft, 10, 30);
-        ctx.fillText("Right: " + scoreRight, canvas.width - 90, 30);
-        ctx.fillText("Play with up, down arrows and w, s ",x, 30)
+        ctx.fillText("Play with arrows and ws",x, 30)
 
         // Ruch piłki
         ball.x += ball.dx;
